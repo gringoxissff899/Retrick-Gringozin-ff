@@ -1,0 +1,816 @@
+<!DOCTYPE html><html lang="pt-BR"><head>
+<meta charset="UTF-8">
+<title>retrick Gringozin ff</title>
+<meta name="theme-color" content="#cc0000">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-title" content="retrick ff">
+<link rel="apple-touch-icon" href="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css">
+</head><body>
+
+<!-- GAMECONFIG -->
+<script type="application/json" id="gameConfig">
+{
+  "com.game.sensitivity": {
+    "SENSITIVITY_MULTIPLIER_LOW_ZOOM": 0.90,
+    "SENSITIVITY_MULTIPLIER_HIGH_ZOOM": 0.80,
+    "AIM_SENSITIVITY_TRANSITION_TIME": "GRADUAL"
+  },
+  "AimBot_Settings": {
+    "AIM_LEVEL_PERCENT": "95%",
+    "AIMBOT_SENSITIVITY": "100%",
+    "SENSITIVITY_WHEN_AIMING": "ANSI/OEM",
+    "BASE_MOUSE_SENSITIVITY": 6.50,
+    "VERTICAL_SENSITIVITY_MULTIPLIER": 2.19,
+    "MOUSE_SMOOTHING": "ENABLE",
+    "MOUSE_FILTERING": 0.0,
+    "LOSS_OF_FOCUS_BY_MOUSE_MOVEMENT": "DISABLED"
+  },
+  "TouchScreen_Settings": {
+    "FORCE_TOUCH_DELAY": 0.1,
+    "BASE_FORCE_PRESSURE": 2.0,
+    "TRIGGERING_FORCE_PRESSURE": 7.0
+  },
+  "InformesFuncion": "Activado",
+  "ComienzaActividadesOcupacion1Si": "0n",
+  "sensitivity": "99999",
+  "TXT_SETTING_VIEW": "dword:10000601",
+  "TXT_SETTING_1XSC": "dword:10000601",
+  "TXT_SETTING_2XSC": "dword:10000601",
+  "TXT_SETTING_4XSC": "dword:10000601",
+  "TXT_SETTING_8XSC": "dword:10000601",
+  "ComienzaActividadesOcupacion2Si": "Of",
+  "ComienzaActividadesOcupacion3Si": "On",
+  "Patches_aimfov": "1x",
+  "MemoryPatch": { "lib": "libil2cpp.so", "offset": "0x30665456", "value": "790444E3", "size": 8 },
+  "ComienzaActividadesOcupacion5": "true",
+  "ComienzaActividadesOcupacion6Si": "On",
+  "AimBot_Dwords": {
+    "Dword_00001": "AimBot 100%",
+    "Dword_00002": "Sensitivy AimBot 100% - Mira-o-Treme - AimBot 100% Vip",
+    "Dword_00003": "String AimBot 100% - Mira-Pesada-Com-Mais-Preci 100% Lite",
+    "Dword_00004": "AimBot 100% Vip - com.dts.freefireth /1.94.8",
+    "Dword_00005": "Sensitivy - AimBot - Mira-Grudar-100% - AimGrudar StartActivy",
+    "Dword_00006": "StartActivy - AimBot 100% - 100%-Mira-Segurar-Na-Cab",
+    "Dword_00007": "StartActivy - AimGrudar + AimBot Grudar 100% - Sensitivy AimBot Vip",
+    "Dword_00008": "Head Kill 100% - Headshot Sensitivy - AimGrudar - Mira-Noo-Tremer",
+    "Dword_00009": "String AimBot 100% - Path com.dts.freefireth - Path config AimBot 100%"
+  },
+  "AIM_BOT_PUXAR_100_CABECA": [
+    "Dword:00009:mira-puxar-0100%-na-cabeca",
+    "Dword:00009:mira-puxar-00100%-na-cabeca",
+    "Dword:00009:mira-puxar-000100%-na-cabeca"
+  ],
+  "X": "dword:00000686",
+  "y": "dword:000001f4",
+  "CPU": "dword:00000064",
+  "GPU": "dword:00000064",
+  "DPI": "dword:000000f0",
+  "generalemulatorsensitivity": "dword:00000064",
+  "joystick": "dword:000003e8",
+  "Fov": "2000",
+  "LEFTCLICK": "dword:000003e8",
+  "RIGHTCLICK": "dword:000003e8",
+  "rightclicklifter": "dword:000003e8",
+  "sensitivity_dword": "dword:00000064",
+  "touchsensitivity": "dword:000000e1",
+  "MouseSensitivity": "6.00",
+  "ro.min.fling_velocity": 8500,
+  "ro.max.fling_velocity": 16000,
+  "adaptive_touch_sensitivity": "speed",
+  "touch.coverage.calibration": "box",
+  "hwui.refreshRate": 96.0,
+  "f.triggeringForceTouchPressure": 6.0,
+  "acceleration": "99999.0px/s",
+  "QuietInterval": 0,
+  "1pxKeyRepeatDelay": 0,
+  "SafeAimConfigParser": {
+    "language": "cs",
+    "namespace": "SafeAimTools",
+    "AimConfig": {
+      "Enabled": false,
+      "Precision": 0.75,
+      "Note": "",
+      "IsHeadshotMode": false
+    },
+    "ConfigParser": {
+      "Parse_steps": [
+        "strip banned packages",
+        "match assignment regex",
+        "switch: aimbot->precision, headshots->IsHeadshotMode, precisao_mira->Precision",
+        "fallback: extract loose percent",
+        "annotate blocked packages in Note"
+      ]
+    },
+    "AimSimulator": {
+      "Shots": 0,
+      "Headshots": 0,
+      "headChance_formula": "0.25 + 0.5 * precision",
+      "focused_multiplier": 1.15,
+      "max_eff": 0.9999
+    },
+    "Demo": {
+      "raw": "aimbot = 100%; headshots; precisao_mira = 100%",
+      "expected_precision": 1.0,
+      "expected_IsHeadshotMode": true,
+      "expected_Note": "[PACKAGE_REFERENCES_BLOCKED]"
+    }
+  },
+  "com.dts.freefireth": {
+    "Sensitivy_Aimlook_startactivy": "DWORD=0990090",
+    "SENSITIVITY_MULTIPLIER_LOW_ZOOM": 0.75,
+    "SENSITIVITY_MULTIPLIER_HIGH_ZOOM": 0.65,
+    "AIM_SENSITIVITY_TRANSITION_TIME": "GRADUAL",
+    "SensitivyX": "AimBot",
+    "MOUSEX_AIM_LEVEL": "95%",
+    "MOUSE_SENSITIVY_AIMBOT": "99%",
+    "MOUSE_SENSITIVITY_WHEN_AIMING": "ANSI/OEM",
+    "MOUSE_SENSITIVITY": 5.50,
+    "MOUSE_VERTICAL_SENSITIVITY_MULTIPLIER": 1.15,
+    "MOUSE_SMOOTHING": "ENABLE",
+    "MOUSE_FILTERING": 0.0,
+    "LOSS_OF_FOCUS_BY_MOUSE_MOVEMENT": "DISABLED",
+    "f.ForceTouchDelay": 0.3,
+    "f.baseForceTouchPressure": 3.0,
+    "f.triggeringForceTouchPressure": 6.0
+  }
+}
+</script>
+
+<style>
+* {
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+}
+*:focus, *:active {
+  outline: none;
+  box-shadow: none;
+}
+* {
+  user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+:root {
+  --glass: rgba(10,10,12,.85);
+  --border: rgba(255,0,0,.35);
+  --red: #cc0000;
+  --red2: #ff2222;
+  --dim: rgba(255,0,0,.08);
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: #000;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  color: #fff;
+  font-family: 'Rajdhani', sans-serif;
+}
+
+canvas { position: fixed; inset: 0; z-index: 0; }
+
+/* ── Scanline overlay ── */
+body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+  background: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 2px,
+    rgba(0,0,0,.08) 2px,
+    rgba(0,0,0,.08) 4px
+  );
+  pointer-events: none;
+}
+
+.wrapper { position: relative; z-index: 2; animation: fadeIn .6s ease both; }
+@keyframes fadeIn { from { opacity:0; transform:translateY(18px); } to { opacity:1; transform:translateY(0); } }
+
+.panel {
+  position: relative;
+  width: min(420px, 92vw);
+  aspect-ratio: 1/1;
+  background: var(--glass);
+  backdrop-filter: blur(28px);
+  -webkit-backdrop-filter: blur(28px);
+  border-radius: 22px;
+  border: 1px solid var(--border);
+  box-shadow:
+    0 0 0 1px rgba(255,0,0,.08),
+    0 0 60px rgba(200,0,0,.18),
+    inset 0 1px 0 rgba(255,80,80,.12);
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* corner deco */
+.panel::before, .panel::after {
+  content: '';
+  position: absolute;
+  width: 18px; height: 18px;
+  border-color: var(--red2);
+  border-style: solid;
+  pointer-events: none;
+}
+.panel::before { top: 10px; left: 10px; border-width: 2px 0 0 2px; border-radius: 4px 0 0 0; }
+.panel::after  { bottom: 10px; right: 10px; border-width: 0 2px 2px 0; border-radius: 0 0 4px 0; }
+
+/* ── Header ── */
+.header-box {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 14px;
+  border-radius: 14px;
+  border: 1px solid rgba(255,0,0,.25);
+  background: rgba(0,0,0,.45);
+  position: relative;
+  overflow: hidden;
+}
+.header-box::before {
+  content: '';
+  position: absolute;
+  left: 0; top: 0; bottom: 0;
+  width: 3px;
+  background: linear-gradient(180deg, #ff0000, #660000);
+  border-radius: 3px 0 0 3px;
+}
+
+.avatar {
+  width: 36px; height: 36px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #cc0000, #330000);
+  border: 1px solid rgba(255,0,0,.4);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 18px;
+  flex-shrink: 0;
+  box-shadow: 0 0 12px rgba(255,0,0,.3);
+  animation: avatarPulse 3s ease-in-out infinite;
+}
+@keyframes avatarPulse {
+  0%,100% { box-shadow: 0 0 8px rgba(255,0,0,.3); }
+  50% { box-shadow: 0 0 20px rgba(255,0,0,.7); }
+}
+
+.title {
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: .8px;
+  text-transform: uppercase;
+  animation: glow 3s ease-in-out infinite;
+  display: flex; align-items: center; gap: 8px;
+}
+.title i { color: var(--red2); font-size: 16px; }
+
+@keyframes glow {
+  0%,100% { text-shadow: 0 0 4px rgba(255,0,0,.3); }
+  50% { text-shadow: 0 0 14px rgba(255,80,80,.8), 0 0 28px rgba(255,0,0,.3); }
+}
+
+/* ── Upload ── */
+.upload {
+  border: 1.5px dashed rgba(255,0,0,.4);
+  border-radius: 14px;
+  padding: 14px 18px;
+  text-align: center;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 13px;
+  color: rgba(255,180,180,.8);
+  background: rgba(255,0,0,.04);
+  transition: all .25s;
+  position: relative;
+  overflow: hidden;
+}
+.upload:hover {
+  border-color: var(--red2);
+  background: rgba(255,0,0,.09);
+  color: #fff;
+}
+.upload i { font-size: 18px; color: var(--red2); }
+.upload.has-file {
+  border-color: var(--red2);
+  background: rgba(255,0,0,.1);
+  color: #fff;
+}
+
+/* ── Inject button ── */
+button.inject {
+  padding: 13px;
+  border-radius: 12px;
+  border: 1px solid rgba(255,0,0,.5);
+  background: linear-gradient(135deg, #aa0000, #cc0000 60%, #aa0000);
+  background-size: 200% 100%;
+  color: #fff;
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  box-shadow: 0 4px 20px rgba(200,0,0,.35);
+  transition: all .2s;
+  position: relative;
+  overflow: hidden;
+}
+button.inject::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, transparent 0%, rgba(255,255,255,.08) 50%, transparent 100%);
+  transform: translateX(-100%);
+  transition: transform .4s;
+}
+button.inject:hover::after { transform: translateX(100%); }
+button.inject:hover { box-shadow: 0 4px 28px rgba(255,0,0,.55); transform: translateY(-1px); }
+button.inject:active { transform: translateY(1px); }
+button.inject i { font-size: 18px; }
+
+/* ── Logs box ── */
+.logs-box {
+  flex: 1;
+  border-radius: 14px;
+  border: 1px solid rgba(255,0,0,.2);
+  background: rgba(0,0,0,.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  min-height: 0;
+}
+.logs-box::before {
+  content: 'SYSTEM LOG';
+  position: absolute;
+  top: 8px; left: 12px;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 9px;
+  color: rgba(255,0,0,.3);
+  letter-spacing: 2px;
+}
+
+/* Spinner */
+.spinner {
+  width: 42px; height: 42px;
+  border: 3px solid rgba(255,0,0,.15);
+  border-top-color: #ff0000;
+  border-right-color: rgba(255,0,0,.5);
+  border-radius: 50%;
+  animation: spin .8s linear infinite;
+  display: none;
+  box-shadow: 0 0 16px rgba(255,0,0,.3);
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+
+/* Success */
+.success {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 12px;
+  letter-spacing: .5px;
+  color: #ff5555;
+  text-align: center;
+  animation: successIn .4s cubic-bezier(.34,1.56,.64,1) both;
+}
+@keyframes successIn {
+  from { opacity:0; transform: scale(.7); }
+  to   { opacity:1; transform: scale(1); }
+}
+.success-icon {
+  width: 40px; height: 40px;
+  border-radius: 50%;
+  background: rgba(255,0,0,.15);
+  border: 2px solid var(--red2);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 20px;
+  box-shadow: 0 0 20px rgba(255,0,0,.4);
+  animation: iconPop .5s cubic-bezier(.34,1.56,.64,1) both .1s;
+}
+@keyframes iconPop {
+  from { transform: scale(0) rotate(-45deg); }
+  to   { transform: scale(1) rotate(0); }
+}
+
+/* ── Open button ── */
+.open-btn {
+  padding: 13px;
+  border-radius: 14px;
+  border: 1px solid rgba(255,0,0,.3);
+  background: rgba(40,0,0,.6);
+  color: rgba(255,255,255,.5);
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  display: flex; align-items: center; justify-content: center; gap: 10px;
+  transition: all .3s;
+  pointer-events: none;
+  filter: blur(.5px);
+  opacity: .5;
+  cursor: not-allowed;
+}
+.open-btn i { font-size: 18px; }
+.open-btn.enabled {
+  pointer-events: auto;
+  filter: none;
+  opacity: 1;
+  color: #fff;
+  background: rgba(80,0,0,.5);
+  border-color: rgba(255,0,0,.5);
+  box-shadow: 0 0 20px rgba(200,0,0,.25);
+  cursor: pointer;
+  animation: enabledPulse 2s ease-in-out infinite;
+}
+@keyframes enabledPulse {
+  0%,100% { box-shadow: 0 0 10px rgba(200,0,0,.2); }
+  50% { box-shadow: 0 0 24px rgba(255,0,0,.5); }
+}
+.open-btn.enabled:hover { transform: translateY(-1px); box-shadow: 0 4px 28px rgba(255,0,0,.4); }
+
+/* ── Frozen ── */
+.frozen { filter: saturate(.85) brightness(.9); }
+.frozen * { pointer-events: none; }
+.frozen .open-btn { pointer-events: auto; }
+
+/* ── PWA btn ── */
+#pwaInstallBtn {
+  position: fixed;
+  bottom: 22px; right: 22px;
+  z-index: 999;
+  background: linear-gradient(135deg, #990000, #cc0000);
+  color: #fff;
+  border: 1px solid rgba(255,80,80,.4);
+  border-radius: 50px;
+  padding: 11px 20px;
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: .5px;
+  cursor: pointer;
+  display: none;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 0 24px rgba(204,0,0,.5);
+  animation: pwaPulse 2s ease-in-out infinite;
+}
+@keyframes pwaPulse {
+  0%,100% { box-shadow: 0 0 12px rgba(204,0,0,.4); }
+  50% { box-shadow: 0 0 30px rgba(255,0,0,.8); }
+}
+#pwaInstallBtn.show { display: flex; }
+
+/* ── Particles canvas overlay ── */
+#particles { position: fixed; inset: 0; z-index: 0; pointer-events: none; }
+</style>
+
+<!-- particles + bg canvas -->
+<canvas id="bg"></canvas>
+<canvas id="particles"></canvas>
+
+<div class="wrapper">
+  <div class="panel">
+
+    <div class="header-box">
+      <div class="avatar">🎯</div>
+      <div class="title">
+        <i class="ph ph-shield-check"></i>
+        retrick Gringozin ff
+      </div>
+    </div>
+
+    <div class="upload" id="uploadZone" onclick="fileInput.click()">
+      <i class="ph ph-folder-open"></i>
+      <span id="uploadText">Selecione o arquivo retrick:</span>
+    </div>
+    <input type="file" id="fileInput" accept=".retrick,.js,.html,.headtrick,.json" hidden>
+
+    <button class="inject" onclick="startInject()">
+      <i class="ph ph-play-circle"></i>
+      Realizar injeção!
+    </button>
+
+    <div class="logs-box">
+      <div class="spinner" id="spinner"></div>
+      <div class="success" id="success">
+        <div class="success-icon">✓</div>
+        O retrick foi injetado, tenha um bom jogo.
+      </div>
+    </div>
+
+    <button class="open-btn" id="openFF" onclick="openFreeFire()">
+      <i class="ph ph-game-controller"></i>
+      Abrir Free Fire
+    </button>
+
+  </div>
+</div>
+
+<button id="pwaInstallBtn" onclick="installPWA()">
+  📲 Instalar App
+</button>
+
+<script>
+// ── Manifest inline ──────────────────────────────────────────
+const manifestData = {
+  name: "retrick Gringozin ff",
+  short_name: "retrick ff",
+  description: "retrick Gringozin ff",
+  start_url: "./",
+  display: "standalone",
+  background_color: "#000000",
+  theme_color: "#cc0000",
+  orientation: "portrait",
+  icons: [{
+    src: "https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg",
+    sizes: "any", type: "image/svg+xml", purpose: "any maskable"
+  }]
+};
+const mBlob = new Blob([JSON.stringify(manifestData)], {type:'application/json'});
+const mURL = URL.createObjectURL(mBlob);
+const lm = document.createElement('link');
+lm.rel = 'manifest'; lm.href = mURL;
+document.head.appendChild(lm);
+
+// ── Service Worker inline ────────────────────────────────────
+const swCode = `
+const CACHE='hf-v2';
+self.addEventListener('install',e=>{self.skipWaiting();});
+self.addEventListener('activate',e=>{self.clients.claim();});
+self.addEventListener('fetch',e=>{
+  e.respondWith(caches.match(e.request).then(r=>r||fetch(e.request)));
+});`;
+const swBlob = new Blob([swCode],{type:'application/javascript'});
+if('serviceWorker' in navigator)
+  navigator.serviceWorker.register(URL.createObjectURL(swBlob)).catch(()=>{});
+
+// ── gameConfig ───────────────────────────────────────────────
+const gameConfig = JSON.parse(document.getElementById('gameConfig').textContent);
+
+// ── App logic ────────────────────────────────────────────────
+let fileSelected = false;
+const fileInput  = document.getElementById('fileInput');
+const spinner    = document.getElementById('spinner');
+const success    = document.getElementById('success');
+const openBtn    = document.getElementById('openFF');
+const uploadZone = document.getElementById('uploadZone');
+const uploadText = document.getElementById('uploadText');
+
+fileInput.addEventListener('change', () => {
+  const fname = fileInput.files.length ? fileInput.files[0].name : '';
+  const exts = ['.retrick', '.headtrick', '.js', '.html', '.json'];
+  fileSelected = exts.some(ext => fname.endsWith(ext));
+  if (fileSelected) {
+    uploadZone.classList.add('has-file');
+    uploadText.textContent = '✓ ' + fileInput.files[0].name;
+  }
+});
+
+function finalizarInjecao() {
+  spinner.style.display = 'none';
+  success.style.display = 'flex';
+  openBtn.classList.add('enabled');
+  document.querySelector('.panel').classList.add('frozen');
+  triggerParticleBurst();
+}
+
+function startInject() {
+  if (!fileSelected) return;
+  success.style.display = 'none';
+  spinner.style.display = 'block';
+  openBtn.classList.remove('enabled');
+  triggerParticleBurst();
+
+  const file = fileInput.files[0];
+
+  // Verifica suporte a FileReader (todos os celulares modernos suportam)
+  if (!window.FileReader) {
+    setTimeout(finalizarInjecao, 2000);
+    return;
+  }
+
+  const reader = new FileReader();
+
+  reader.onload = function(e) {
+    const content = e.target.result;
+    const fname = file.name.toLowerCase();
+
+    try {
+      if (fname.endsWith('.js')) {
+        // Executa JS diretamente — funciona em Android e iOS
+        try {
+          const fn = new Function(content);
+          fn();
+        } catch {
+          const scriptEl = document.createElement('script');
+          scriptEl.textContent = content;
+          document.head.appendChild(scriptEl);
+        }
+
+      } else if (fname.endsWith('.html')) {
+        // Injeta HTML em blob URL — compatível com iOS Safari
+        try {
+          const blob = new Blob([content], { type: 'text/html' });
+          const url  = URL.createObjectURL(blob);
+          const iframe = document.createElement('iframe');
+          iframe.style.cssText = 'position:fixed;width:0;height:0;border:none;opacity:0;pointer-events:none;';
+          iframe.src = url;
+          document.body.appendChild(iframe);
+          iframe.onload = () => URL.revokeObjectURL(url);
+        } catch {
+          // fallback: escreve direto
+          const iframe = document.createElement('iframe');
+          iframe.style.cssText = 'position:fixed;width:0;height:0;border:none;opacity:0;pointer-events:none;';
+          document.body.appendChild(iframe);
+          try {
+            iframe.contentDocument.open();
+            iframe.contentDocument.write(content);
+            iframe.contentDocument.close();
+          } catch(ex) { console.warn('iframe fallback error', ex); }
+        }
+
+      } else if (fname.endsWith('.json') || fname.endsWith('.retrick') || fname.endsWith('.headtrick')) {
+        // Aplica JSON sobre gameConfig
+        try {
+          const cfg = JSON.parse(content);
+          Object.assign(gameConfig, cfg);
+        } catch {
+          // Se não for JSON válido, tenta executar como script
+          try {
+            const fn = new Function(content);
+            fn();
+          } catch(ex) { console.warn('script fallback error', ex); }
+        }
+      }
+    } catch(err) {
+      console.warn('Inject error:', err);
+    }
+
+    setTimeout(finalizarInjecao, 2000);
+  };
+
+  reader.onerror = function() {
+    setTimeout(finalizarInjecao, 2000);
+  };
+
+  reader.readAsText(file, 'UTF-8');
+}
+
+function openFreeFire() {
+  if (!openBtn.classList.contains('enabled')) return;
+  window.location.href = 'freefire://';
+}
+
+// ── PWA Install ──────────────────────────────────────────────
+let deferredPrompt = null;
+const pwaBtn = document.getElementById('pwaInstallBtn');
+
+window.addEventListener('beforeinstallprompt', e => {
+  e.preventDefault();
+  deferredPrompt = e;
+  pwaBtn.classList.add('show');
+});
+
+async function installPWA() {
+  if (!deferredPrompt) return;
+  deferredPrompt.prompt();
+  const { outcome } = await deferredPrompt.userChoice;
+  if (outcome === 'accepted') pwaBtn.classList.remove('show');
+  deferredPrompt = null;
+}
+
+window.addEventListener('appinstalled', () => {
+  pwaBtn.classList.remove('show');
+  deferredPrompt = null;
+});
+
+// ── Background canvas (lines) ────────────────────────────────
+const bgC = document.getElementById('bg');
+const bgCtx = bgC.getContext('2d');
+let pts = [];
+
+function resizeBg() {
+  const dpr = devicePixelRatio || 1;
+  bgC.width = innerWidth * dpr;
+  bgC.height = innerHeight * dpr;
+  bgC.style.width = innerWidth + 'px';
+  bgC.style.height = innerHeight + 'px';
+  bgCtx.setTransform(dpr,0,0,dpr,0,0);
+  const count = Math.min(260, Math.floor(innerWidth * innerHeight / 9000));
+  pts = Array.from({length: count}, () => ({
+    x: Math.random() * innerWidth,
+    y: Math.random() * innerHeight,
+    vx: (Math.random() - .5) * 1.8,
+    vy: (Math.random() - .5) * 1.8
+  }));
+}
+window.addEventListener('resize', resizeBg);
+resizeBg();
+
+(function drawBg() {
+  bgCtx.clearRect(0, 0, innerWidth, innerHeight);
+  for (let i = 0; i < pts.length; i++) {
+    const a = pts[i];
+    a.x += a.vx; a.y += a.vy;
+    if (a.x < 0 || a.x > innerWidth)  a.vx *= -1;
+    if (a.y < 0 || a.y > innerHeight) a.vy *= -1;
+    for (let j = i + 1; j < pts.length; j++) {
+      const b = pts[j];
+      const d = Math.hypot(a.x - b.x, a.y - b.y);
+      if (d < 180) {
+        bgCtx.strokeStyle = `rgba(220,30,30,${(1 - d/180) * 0.45})`;
+        bgCtx.beginPath();
+        bgCtx.moveTo(a.x, a.y);
+        bgCtx.lineTo(b.x, b.y);
+        bgCtx.stroke();
+      }
+    }
+  }
+  requestAnimationFrame(drawBg);
+})();
+
+// ── Particle burst canvas ────────────────────────────────────
+const pC = document.getElementById('particles');
+const pCtx = pC.getContext('2d');
+let particles = [];
+
+function resizeP() {
+  const dpr = devicePixelRatio || 1;
+  pC.width = innerWidth * dpr;
+  pC.height = innerHeight * dpr;
+  pC.style.width = innerWidth + 'px';
+  pC.style.height = innerHeight + 'px';
+  pCtx.setTransform(dpr,0,0,dpr,0,0);
+}
+window.addEventListener('resize', resizeP);
+resizeP();
+
+function triggerParticleBurst() {
+  const cx = innerWidth / 2;
+  const cy = innerHeight / 2;
+  for (let i = 0; i < 60; i++) {
+    const angle = Math.random() * Math.PI * 2;
+    const speed = 1.5 + Math.random() * 5;
+    const size  = 2 + Math.random() * 4;
+    const colors = ['#ff0000','#ff4444','#ff8888','#ffcccc','#cc0000'];
+    particles.push({
+      x: cx, y: cy,
+      vx: Math.cos(angle) * speed,
+      vy: Math.sin(angle) * speed,
+      life: 1,
+      decay: .012 + Math.random() * .02,
+      size,
+      color: colors[Math.floor(Math.random() * colors.length)]
+    });
+  }
+}
+
+(function drawParticles() {
+  pCtx.clearRect(0, 0, innerWidth, innerHeight);
+  particles = particles.filter(p => p.life > 0);
+  for (const p of particles) {
+    p.x += p.vx;
+    p.y += p.vy;
+    p.vy += 0.08; // gravity
+    p.life -= p.decay;
+    pCtx.globalAlpha = Math.max(0, p.life);
+    pCtx.fillStyle = p.color;
+    pCtx.shadowColor = p.color;
+    pCtx.shadowBlur = 6;
+    pCtx.beginPath();
+    pCtx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
+    pCtx.fill();
+  }
+  pCtx.globalAlpha = 1;
+  pCtx.shadowBlur = 0;
+  requestAnimationFrame(drawParticles);
+})();
+</script>
+</body></html>
